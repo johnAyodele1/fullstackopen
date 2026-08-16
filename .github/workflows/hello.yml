@@ -1,0 +1,16 @@
+name: Run EsLint
+
+on: push
+
+jobs:
+    run_eslinter_for_code:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v6
+            - uses: actions/setup-node@v6
+              with:
+                node-version: '24'
+             - name: Install dependencies 
+                run: npm install  
+             - name: Check style        
+                run: npm run eslint
