@@ -1,0 +1,22 @@
+name: 'Hello World!'  
+
+  on:
+    push:
+      branches:
+        - main
+
+  jobs:
+    say_hello_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: say hellp
+          run: |
+            echo "Hello World!"
+
+        - name: Run date
+          run: |
+            echo "${{env.CURRENT_DATE}}" 
+
+        - name: Run ls -l
+          run: |
+            ls -l               
