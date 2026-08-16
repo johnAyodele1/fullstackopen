@@ -15,7 +15,7 @@ jobs:
 
       - name: Run date
         run: |
-          echo "${{ env.CURRENT_DATE }}" 
+          echo "Today" 
 
       - name: Run ls -l
         run: |
