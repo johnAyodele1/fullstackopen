@@ -12,9 +12,12 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: part11/package-lock.json
 
       - name: Install dependencies
-        run: npm install
+        working-directory: ./part11
+        run: npm ci
 
       - name: Check style
         working-directory: ./part11
