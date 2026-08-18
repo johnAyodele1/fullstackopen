@@ -1,6 +1,13 @@
 {
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "eslint": "ESLINT_USE_FLAT_CONFIG=false eslint part11/src --fix"
+  },
   "dependencies": {
-    "eslint": "^10.8.1",
     "json-server": "^1.0.0-beta.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1"
   }
 }
