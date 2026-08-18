@@ -17,4 +17,5 @@ jobs:
         run: npm install
 
       - name: Check style
-        run: npm run eslint
+        working-directory: ./part11
+        run: npm run lint
